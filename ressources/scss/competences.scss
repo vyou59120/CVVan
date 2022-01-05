@@ -1,0 +1,65 @@
+.competences{
+    text-align: center;
+    padding-bottom: 50px;
+    // background-color: $ter-color;
+    h1{
+        padding: 20px;
+        // color: $secondary-color;
+    }
+    .container{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        padding: 20px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            background-color: $secondary-color;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .skill{
+                display: flex;
+                justify-content: space-between;
+                .niveau{
+                    color:$primary-color;
+                }
+            }
+            h3{
+                margin:0;
+                left:0;
+                color:$primary-color;
+            }
+        }
+        i{
+            font-size: 20px;
+            color: $qua-color;
+        }
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .competences{
+        .container{
+                .content{
+                    width: 90%;
+                }
+                i{
+                    display: none;
+                }
+        }
+    }
+}
+
+@media screen and ( min-width: 769px) {
+    .competences{
+        .container{
+                i{
+                    margin: auto;
+                    width: 10%;
+                }
+        }
+    }
+}

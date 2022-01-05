@@ -1,0 +1,48 @@
+@media screen and ( min-width: 768px) {
+    .bio{
+        width: 80%;
+        margin: auto;
+        padding: 50px;
+        h3{
+            margin:0;
+        }
+        img{
+            float: left;
+            margin: 0 20px 20px 0;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .infosidentite{
+            span{
+                font-weight: bold;
+            }
+        }
+        .histoire{
+            text-align: justify;
+        }
+    }
+}
+@media screen and ( max-width: 767px) {
+    .bio{
+        margin: auto;
+        padding: 50px;
+        h3{
+            margin:0;
+        }
+        img{
+            left: 50%;
+            transform: translate(-50%);
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .infosidentite{
+            span{
+                font-weight: bold;
+                color: $qua-color;
+            }
+        }
+        .histoire{
+            text-align: justify;
+        }
+    }
+}

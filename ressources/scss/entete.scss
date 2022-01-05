@@ -1,0 +1,162 @@
+@media screen and ( max-width: 768px) {
+    .entete{
+        background-color: $primary-color;
+        text-align: center;
+        // background-image: url("../img/background.jpg");
+        background-image: url(../img/background.jpg);
+        // height: 100%;
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+
+        img{
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .domaines{
+            position: absolute;
+            top : 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            i{
+                font-size: $font-size-icon;
+                color:$secondary-color;
+            }
+            .code{
+                // transform: translate(-90px, 0);
+                transform: translate(-150px, 150px);
+                color:$secondary-color;
+            }
+            .database{
+                // transform: translate(15px, 120px);
+                transform: translate(0px, 150px);
+                color:$secondary-color;
+            }
+            .square{
+                // transform: translate(-25px, -120px);
+                transform: translate(0px, -150px);
+                color:$secondary-color;
+            }
+            .mobile{
+                // transform: translate(90px, 0px);
+                transform: translate(150px, -150px);
+                color:$secondary-color;
+            }
+        }
+
+
+        .entete2{
+            position: absolute;
+            top : 150px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            padding : 20px;
+            width: 90%;
+
+            img{
+                border-radius: 20px;
+                background: green;
+            }
+
+            .infos{
+                color : $secondary-color;
+                padding: 10px;
+                margin: auto;
+                h1{
+                   font-size: 2em; 
+                }
+                
+            } 
+        }
+    }
+}
+@media screen and ( max-width: 1024px) {
+@media (orientation: landscape) {
+    .domaines{ 
+      display: none;
+    }
+}
+}
+@media screen and ( min-width: 768px) {
+    .entete{
+        background-color: $primary-color;
+        text-align: center;
+        // background-image: url("../img/background.jpg");
+        background-image: url(../img/background.jpg);
+        // height: 100%;
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+
+        img{
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .domaines{
+            position: absolute;
+            top : 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            i{
+                font-size: $font-size-icon;
+                color:$secondary-color;
+            }
+            .code{
+                // transform: translate(-90px, 0);
+                transform: translate(-200px, 150px);
+                color:$secondary-color;
+            }
+            .database{
+                // transform: translate(15px, 120px);
+                transform: translate(0px, 200px);
+                color:$secondary-color;
+            }
+            .square{
+                // transform: translate(-25px, -120px);
+                transform: translate(0px, -200px);
+                color:$secondary-color;
+            }
+            .mobile{
+                // transform: translate(90px, 0px);
+                transform: translate(200px, -150px);
+                color:$secondary-color;
+            }
+        }
+
+
+        .entete2{
+            position: absolute;
+            top : 150px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            padding : 20px;
+            width: 90%;
+
+            img{
+                border-radius: 20px;
+                background: green;
+            }
+
+            .infos{
+                color : $secondary-color;
+                padding: 10px;
+                margin: auto;
+                font-size: 1.6em;
+            } 
+        }
+    }
+}

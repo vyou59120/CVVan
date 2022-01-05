@@ -1,0 +1,119 @@
+@media screen and (min-width: 600px) {
+.experiences{
+    text-align: center;
+    h1{
+        padding: 20px;
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: $ter-color;
+            top: 0;
+            bottom: 0;
+            left: 20%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+
+            i{
+                content: '';
+                position: absolute;
+                z-index: 1;
+                left: -26px;
+                top: 10px;
+                font-size: 26px;
+                background-color: white;
+                color: $qua-color;
+                padding: 10px;
+            }
+
+            .content {
+                padding: 0px 30px;
+                // background-color: $ter-color;
+                position: relative;
+                border-radius: 6px;
+                border: 4px solid $ter-color;
+                text-align: left;
+                h2{
+                    color: $primary-color;
+                    margin: 0;
+                }
+                .title{
+                    font-weight: bold;
+                }
+                // .lieu{
+                    
+                // }
+                // .description{
+                    
+                // }
+            }
+        }
+
+        .right {
+            left: 20%;
+
+            &::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid $ter-color;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent $ter-color transparent transparent;
+            }
+            &:after {
+                left: -16px;
+            }
+        }
+
+      }
+    }
+}    
+
+@media screen and (max-width: 600px) {
+    .experiences{
+        text-align: center;
+        h1{
+            padding: 20px;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            .container {
+                padding: 10px 40px;
+                i{
+                    font-size: 26px;
+                }
+                .content {
+                    padding: 0px 30px;
+                    border: 4px solid $ter-color;
+                    text-align: left;
+                    h2{
+                        color: $primary-color;
+                    }
+                }
+            }
+
+          }
+        }
+}   
+
+
+
+
