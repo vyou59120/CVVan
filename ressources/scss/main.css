@@ -22,7 +22,7 @@
         font-size: 40px;
         color: white; }
       .entete .domaines .code {
-        transform: translate(-150px, 150px);
+        transform: translate(-140px, 150px);
         color: white; }
       .entete .domaines .database {
         transform: translate(0px, 150px);
@@ -31,7 +31,7 @@
         transform: translate(0px, -150px);
         color: white; }
       .entete .domaines .mobile {
-        transform: translate(150px, -150px);
+        transform: translate(140px, -150px);
         color: white; }
     .entete .entete2 {
       position: absolute;
@@ -51,7 +51,7 @@
         margin: auto; }
         .entete .entete2 .infos h1 {
           font-size: 2em; } }
-@media screen and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (max-height: 700px) and (orientation: landscape) {
   .domaines {
     display: none; } }
 @media screen and (min-width: 768px) {
