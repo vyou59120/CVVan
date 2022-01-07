@@ -13,26 +13,73 @@
       height: 100%;
       background-repeat: no-repeat;
       object-fit: contain; }
-    .entete .domaines {
+    .entete i {
+      font-size: 40px;
+      color: white; }
+    .entete .code {
       position: absolute;
+      color: white;
       top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      .entete .domaines i {
-        font-size: 40px;
-        color: white; }
-      .entete .domaines .code {
-        transform: translate(-140px, 150px);
-        color: white; }
-      .entete .domaines .database {
-        transform: translate(0px, 150px);
-        color: white; }
-      .entete .domaines .square {
-        transform: translate(0px, -150px);
-        color: white; }
-      .entete .domaines .mobile {
-        transform: translate(140px, -150px);
-        color: white; }
+      left: 45%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation; }
+    .entete .code div {
+      width: 40px;
+      height: 45px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+    .entete .database {
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 45%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation2; }
+    .entete .database div {
+      width: 40px;
+      height: 45px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+    .entete .square {
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 45%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation3; }
+    .entete .square div {
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+    .entete .mobile {
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 45%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation4; }
+    .entete .mobile div {
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
     .entete .entete2 {
       position: absolute;
       top: 150px;
@@ -50,9 +97,30 @@
         padding: 10px;
         margin: auto; }
         .entete .entete2 .infos h1 {
-          font-size: 2em; } }
+          font-size: 2em; }
+
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg) translate(0px, -130px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(0px, -130px); } }
+  @keyframes rotation2 {
+    from {
+      -webkit-transform: rotate(0deg) translate(0px, 130px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(0px, 130px); } }
+  @keyframes rotation3 {
+    from {
+      -webkit-transform: rotate(0deg) translate(130px, 0px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(130px, 0px); } }
+  @keyframes rotation4 {
+    from {
+      -webkit-transform: rotate(0deg) translate(-130px, 0px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(-130px, 0px); } } }
 @media screen and (max-width: 1024px) and (max-height: 700px) and (orientation: landscape) {
-  .domaines {
+  .code, .database, .square, .mobile {
     display: none; } }
 @media screen and (min-width: 768px) {
   .entete {
@@ -69,26 +137,93 @@
       height: 100%;
       background-repeat: no-repeat;
       object-fit: contain; }
-    .entete .domaines {
+    .entete i {
+      font-size: 40px;
+      color: white; }
+    .entete .code {
       position: absolute;
+      color: white;
       top: 60%;
       left: 50%;
-      transform: translate(-50%, -50%); }
-      .entete .domaines i {
-        font-size: 40px;
-        color: white; }
-      .entete .domaines .code {
-        transform: translate(-200px, 150px);
-        color: white; }
-      .entete .domaines .database {
-        transform: translate(0px, 200px);
-        color: white; }
-      .entete .domaines .square {
-        transform: translate(0px, -200px);
-        color: white; }
-      .entete .domaines .mobile {
-        transform: translate(200px, -150px);
-        color: white; }
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation; }
+    .entete .code div {
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+    .entete .database {
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 50%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation2; }
+    .entete .database div {
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+    .entete .square {
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 50%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation3; }
+    .entete .square div {
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+    .entete .mobile {
+      position: absolute;
+      color: white;
+      top: 60%;
+      left: 50%;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotation4; }
+    .entete .mobile div {
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: rotationi; }
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg) translate(0px, -150px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(0px, -150px); } }
+  @keyframes rotation2 {
+    from {
+      -webkit-transform: rotate(0deg) translate(0px, 150px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(0px, 150px); } }
+  @keyframes rotation3 {
+    from {
+      -webkit-transform: rotate(0deg) translate(150px, 0px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(150px, 0px); } }
+  @keyframes rotation4 {
+    from {
+      -webkit-transform: rotate(0deg) translate(-150px, 0px); }
+    to {
+      -webkit-transform: rotate(360deg) translate(-150px, 0px); } }
     .entete .entete2 {
       position: absolute;
       top: 150px;
@@ -106,6 +241,11 @@
         padding: 10px;
         margin: auto;
         font-size: 1.6em; } }
+@keyframes rotationi {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg); } }
 @media screen and (min-width: 768px) {
   .bio {
     width: 80%;

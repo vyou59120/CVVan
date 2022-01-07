@@ -1,0 +1,68 @@
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg) translate(0px, -150px);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translate(0px, -150px);
+    }
+}
+
+@-webkit-keyframes rotation2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+.hair {
+    position:absolute;
+    top:50%;
+    left:50%;
+    position:absolute;
+    -webkit-animation-duration:         10s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+     -webkit-animation-name: rotation;
+}
+.hair div {
+    width:40px;
+    height:40px;
+    border: 1px solid #000;
+/*     position:absolute; */
+    -webkit-animation-duration:         10s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: rotation2;
+}
+
+.hair2 {
+    position:absolute;
+    top:40%;
+    left:40%;
+    position:absolute;
+    -webkit-animation-duration:         10s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+     -webkit-animation-name: rotation;
+}
+.hair2 div {
+    width:40px;
+    height:40px;
+    border: 1px solid #000;
+/*     position:absolute; */
+    -webkit-animation-duration:         10s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: rotation2;
+}
+
+<div class="hair" onclick="rotate()">
+    <div id="d1"></div>
+
+</div>
+
+<div class="hair2" onclick="rotate()">
+    <div id="d2"></div>
+
+</div> 
